@@ -10,6 +10,13 @@ Rails.application.routes.draw do
  # get 'pages/home', to: 'pages#home'
  root 'pages#home'
  get  'about', to: 'pages#about'
+ 
+ resources :articles
+ 
+ #this is a patch to updae delete all the artick=les
+ 
+ 
+ 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
